@@ -1,5 +1,5 @@
 <launch>
-    <node pkg="turtlesim" type="turtlesim_node" name="node1">
+    <node pkg="turtlesim" type="turtlesim_node" name="node1" launch-prefix="xterm -e gdb --args">
         <remap from="/turtle1/cmd_vel" to="cmd_vel"/>
     </node>
     <node pkg="turtlesim" type="turtlesim_node" name="node2"/>
